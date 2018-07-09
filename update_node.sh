@@ -5,9 +5,9 @@ apt-get -qq update
 apt -qqy install curl
 clear
 
-TARBALLURL=`curl -s https://api.github.com/repos/coriumplatform/corium/releases/latest | grep browser_download_url | grep linux64 | cut -d '"' -f 4`
-TARBALLNAME=`curl -s https://api.github.com/repos/coriumplatform/corium/releases/latest | grep browser_download_url | grep linux64 | cut -d '"' -f 4 | cut -d "/" -f 9`
-MLDNVERSION=`curl -s https://api.github.com/repos/coriumplatform/corium/releases/latest | grep browser_download_url | grep linux64 | cut -d '"' -f 4 | cut -d "/" -f 8`
+TARBALLURL="https://github.com/coriumplatform/corium/releases/download/2.6.12/corium-2.6.12-linux64.tar.gz"
+TARBALLNAME="corium-2.6.12-linux64.tar.gz"
+MLDNVERSION="2.6.12"
 
 clear
 echo "This script will update your masternode to version $MLDNVERSION"

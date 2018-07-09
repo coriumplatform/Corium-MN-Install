@@ -39,9 +39,6 @@ rm -rf $USERHOME/.corium/peers.dat
 cp $USERHOME/.corium/corium.conf $USERHOME/.corium/corium.conf.backup
 sed -i '/^addnode/d' $USERHOME/.corium/corium.conf
 
-echo "Installing bootstrap file..."
-wget $BOOTSTRAPURL && xz -cd $BOOTSTRAPARCHIVE > $USERHOME/.corium/bootstrap.dat && rm $BOOTSTRAPARCHIVE
-
 if [ -e /etc/systemd/system/coriumd.service ]; then
   sudo systemctl start coriumd
 else
