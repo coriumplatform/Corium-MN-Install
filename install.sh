@@ -108,9 +108,9 @@ clear
 
 # These should automatically find the latest version of Corium
 
-TARBALLURL="https://github.com/coriumplatform/corium/releases/download/2.6.12/corium-2.6.12-linux64.tar.gz"
-TARBALLNAME="corium-2.6.12-linux64.tar.gz"
-MLDNVERSION="2.6.12"
+TARBALLURL="https://github.com/coriumplatform/corium/releases/download/2.6.13/corium-2.6.13-linux64.tar.gz"
+TARBALLNAME="corium-2.6.13-linux64.tar.gz"
+MLDNVERSION="2.6.13"
 BOOTSTRAPURL=`curl -s https://api.github.com/repos/coriumplatform/corium/releases/latest | grep bootstrap.dat.xz | grep browser_download_url | cut -d '"' -f 4`
 BOOTSTRAPARCHIVE="bootstrap.dat.xz"
 
